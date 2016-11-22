@@ -1,6 +1,7 @@
 # Haskell Notes
 
 We’re going to learn Haskell!
+Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/issues).
 
 ## Material
 
