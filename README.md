@@ -1,6 +1,6 @@
 # Haskell Notes
 
-[![Join the chat at https://gitter.im/haskell-resources/Lobby](https://badges.gitter.im/haskell-resources/Lobby.svg)](https://gitter.im/haskell-resources/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/haskell-resources/Lobby](https://badges.gitter.im/haskell-resources/Lobby.svg)](https://gitter.im/haskell-resources/Lobby)
 
 We’re going to learn Haskell!
 Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/issues).
