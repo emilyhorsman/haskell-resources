@@ -25,4 +25,5 @@ Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/is
 ## Concepts
 
 [Typeclasss](https://en.wikibooks.org/wiki/Haskell/Classes_and_types)
+
 Monads - Are there any clear, concise tutorials?
