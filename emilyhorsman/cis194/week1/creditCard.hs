@@ -3,11 +3,18 @@ Description : CIS 194 Homework 1
 -}
 
 
+-- | Get the lowest value digit of a number.
+--
+--   401 => 1
+getLowestDigit :: Integer -> Integer
+getLowestDigit n = n `mod` 10
+
+
 -- | Take a positive number and return a list of its digits in reverse order.
 toDigitsRev :: Integer -> [Integer]
 toDigitsRev n
     | n <= 0 = []
-    | otherwise = (n `mod` 10) : toDigitsRev (n `div` 10)
+    | otherwise = getLowestDigit n : toDigitsRev (n `div` 10)
 
 
 -- | Take a positive number and return a list of its digits.
