@@ -1,0 +1,16 @@
+cache:
+    directories:
+        - $HOME/.ghc
+        - $HOME/.cabal
+
+language: haskell
+
+ghc: 8.0
+
+install:
+    - cabal install happy
+    - cabal install hlint
+
+script:
+    - hlint .
+
