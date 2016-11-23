@@ -1,6 +1,7 @@
 # Haskell Notes
 
 [![Join the chat at https://gitter.im/haskell-resources/Lobby](https://badges.gitter.im/haskell-resources/Lobby.svg)](https://gitter.im/haskell-resources/Lobby)
+[![Build Status](https://travis-ci.org/emilyhorsman/haskell-resources.svg?branch=master)](https://travis-ci.org/emilyhorsman/haskell-resources)
 
 We’re going to learn Haskell!
 Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/issues).
