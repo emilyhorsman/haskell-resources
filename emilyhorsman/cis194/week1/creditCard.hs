@@ -43,7 +43,9 @@ doubleEveryOther = alternateMapRight (* 2)
 -- | Given a list of numbers, sum all the digits of all the numbers.
 sumDigits :: [Integer] -> Integer
 sumDigits [] = 0
-sumDigits [x] = x
+sumDigits [x]
+    | x > 9 = sumDigits (toDigits x)
+    | otherwise = x
 sumDigits (x:zs) = sumDigits (toDigits x) + sumDigits zs
 
 
