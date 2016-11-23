@@ -6,14 +6,20 @@ toDigitsRev n
 toDigits :: Integer -> [Integer]
 toDigits n = reverse (toDigitsRev n)
 
+isEven :: Int -> Bool
+isEven n = n `mod` 2 == 0
+
+alternateMapRight :: (a -> a) -> [a] -> [a]
+alternateMapRight f [] = []
+alternateMapRight f [x] = [x]
+alternateMapRight f (x:y:zs)
+    -- [1,2] with [3,4] remaining -> first number should be mapped
+    -- [1,2] with [3,4,5] remaining -> second number should be mapped
+    | isEven (length zs) = f x : y : alternateMapRight f zs
+    | otherwise          = x : f y : alternateMapRight f zs
+
 doubleEveryOther :: [Integer] -> [Integer]
-doubleEveryOther [] = []
-doubleEveryOther [x] = [x]
-doubleEveryOther (x:y:zs)
-    -- [1,2] with [3,4] remaining -> first number should be doubled
-    | length zs `mod` 2 == 0 = (x * 2) : y : doubleEveryOther zs
-    -- [1,2] with [3] remaining -> second number should be doubled
-    | otherwise = x : (y * 2) : doubleEveryOther zs
+doubleEveryOther xs = alternateMapRight (* 2) xs
 
 sumDigits :: [Integer] -> Integer
 sumDigits [] = 0
