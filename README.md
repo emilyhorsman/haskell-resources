@@ -15,3 +15,14 @@ Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/is
 * [State of the Haskell ecosystem](https://github.com/Gabriel439/post-rfc/blob/master/sotu.md)
 * [Programming/style guidelines](https://wiki.haskell.org/Programming_guidelines)
 * [Blog post on education materials by the author of Haskell Book](http://bitemyapp.com/posts/2014-12-31-functional-education.html)
+
+
+## Language Docs
+
+* [Prelude](https://hackage.haskell.org/package/base-4.9.0.0/docs/Prelude.html)
+* [Hoogle](https://www.haskell.org/hoogle/)
+
+## Concepts
+
+[Typeclasss](https://en.wikibooks.org/wiki/Haskell/Classes_and_types)
+Monads - Are there any clear, concise tutorials?
