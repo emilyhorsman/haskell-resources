@@ -29,3 +29,7 @@ Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/is
 [Typeclasss](https://en.wikibooks.org/wiki/Haskell/Classes_and_types)
 
 Monads - Are there any clear, concise tutorials?
+
+## Other
+
+[Do notation considered harmful](https://wiki.haskell.org/Do_notation_considered_harmful)
