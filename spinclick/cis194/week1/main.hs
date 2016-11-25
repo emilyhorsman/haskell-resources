@@ -1,17 +1,21 @@
-import Data.Char
+import Data.Char (digitToInt)
 
-number = map digitToInt "4012888888881881"
+number = map digitToInt "4012888888881882"
+--number = map digitToInt "1386"
 
-pzip :: [a] -> [(a,a)]
-pzip (a:b:rest) = (a,b) : (pzip rest)
-pzip [] = []
+pmap :: [a] -> [(a,a)]
+pmap (f:s:rest) = (f,s):(pmap rest)
+pmap [] = []
 
-doubleEveryFromRight :: [Int] -> [Int]
-doubleEveryFromRight card = 
-  unzip $
-    map 
-      (\p -> ((snd p)*2, (fst p))) 
-      (pzip (reverse card))
+splitDigit :: Int -> [Int]
+splitDigit i 
+  | i == 0 = []
+  | otherwise = (i `mod` 10) : (splitDigit $ i `div` 10)
 
-main = print $ (doubleEveryFromRight [1,3,8,6])
+doubleSnd :: [(Int,Int)] -> [Int]
+doubleSnd ((f,s):rest) = f:s:(doubleSnd rest)
+doubleSnd [] = []
 
+answer = ((sum $ doubleSnd $ pmap $ reverse $ number) `mod` 10) == 0
+
+main = print answer
