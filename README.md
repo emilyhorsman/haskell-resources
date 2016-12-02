@@ -21,6 +21,7 @@ Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/is
 ## Language Docs
 
 * [Syntax](http://prajitr.github.io/quick-haskell-syntax/)
+* [Keywords](https://wiki.haskell.org/Keywords)
 * [Prelude](https://hackage.haskell.org/package/base-4.9.0.0/docs/Prelude.html)
 * [Hoogle](https://www.haskell.org/hoogle/)
 
