@@ -24,6 +24,7 @@ Check out the [open issues](https://github.com/emilyhorsman/haskell-resources/is
 * [Keywords](https://wiki.haskell.org/Keywords)
 * [Prelude](https://hackage.haskell.org/package/base-4.9.0.0/docs/Prelude.html)
 * [Hoogle](https://www.haskell.org/hoogle/)
+* [Haskell 10 minutes](https://wiki.haskell.org/Learn_Haskell_in_10_minutes)
 
 ## Concepts
 
